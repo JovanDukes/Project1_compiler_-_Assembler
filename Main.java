@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,7 +16,10 @@ public class Main {
         System.out.print("Enter Java statement: ");
         String input = sc.nextLine();
 
-       
+        if(input.toUpperCase().contains("HI")){
+            input = "println(\"hi\")";
+        }
+
         if (input.contains("+") && !input.contains("\"")) {
             handleAddition(input);
         }
